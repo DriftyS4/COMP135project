@@ -1,0 +1,57 @@
+/*
+COMP 135
+gradecalculator.cass
+
+*/
+
+
+#answer
+{
+	width: 100px;
+}
+
+body
+{
+	font: 12pt "Century Gothic", "Helvetica", "Arial", sans-serif;
+}
+
+button
+{
+	font-size: 20pt;
+	font-weight: bold;
+	margin: 15px auto;
+}
+
+#container
+{
+	margin: auto;
+	width: 600px;
+}
+
+fieldset
+{
+	background-color: #F0F0F0;
+	float: left;
+	height: 150px;
+	margin-right: 15px;
+	text-align: center;
+}
+
+h1, p
+{
+	text-align: center;
+}
+
+#weightcol,#gradecol
+{
+	float: left;
+	width: 110px;
+	height: 90px;
+	margin: 5px;
+}
+#calcbutton
+{
+	float: right;
+	margin: auto;
+	width: 600px;
+}
