@@ -12,6 +12,85 @@ window.onload = function(){
 };
 */
 
+function add() {
+	var br = document.createElement("hr");
+	var br2 = document.createElement("hr");
+	var br3 = document.createElement("hr");
+	var br4 = document.createElement("hr");
+    for (i=1; i<=3; i++)
+      {
+        //Create an input type dynamically.
+        var element = document.createElement("input");
+		var weight = document.createElement("select");
+		var quack = document.createElement("option");
+		var meep = document.createElement("option");
+		var bleeh = document.createElement("option");
+		
+		//Data for the amount of items that exist (starts from 5 since there are 5 by default) Use this for calculation Joseph
+		var itemCounter = document.getElementById("addButton");
+		var thing = itemCounter.getAttribute("value");
+		
+		//Weights
+		quack.appendChild(document.createTextNode('Homework'));
+		quack.value='homework';
+		weight.appendChild(quack);
+		meep.appendChild(document.createTextNode('Quiz'));
+		meep.value='quiz';
+		weight.appendChild(meep);
+		bleeh.appendChild(document.createTextNode('test'));
+		bleeh.value='test';
+		weight.appendChild(bleeh);
+		
+		//Sets weight id
+		weight.setAttribute("style", "height: 20px");
+		weight.setAttribute("id", thing);
+		
+		thing++;
+		itemCounter.setAttribute("value",thing);
+		
+		//Assign different attributes to the element.
+		//Sets the id of new entries
+		element.setAttribute("id", thing);
+        element.setAttribute("type", "text");
+        element.setAttribute("name", thing);
+		
+		//Uncomment if you wish to see the ids of the fill boxes//
+		//element.setAttribute("value", thing);
+		
+		element.setAttribute("style", "width: 80px");
+     
+        var foo = document.getElementById("fooBar");
+		var foo2 = document.getElementById("fooBar2");
+		var foo3 = document.getElementById("fooBar3");
+		var foo4 = document.getElementById("fooBar4");
+		
+		
+		if(i==1)
+		{
+			foo.appendChild(br);
+			foo.appendChild(weight);
+			
+			foo2.appendChild(br2);
+			foo2.appendChild(element);
+		}
+		else if(i==2)
+		{
+			//Append the element in page (in span).
+			foo3.appendChild(br3);
+			foo3.appendChild(element);
+		}
+		else
+		{
+			//Append the element in page (in span).
+			element.setAttribute("disabled", true);
+			foo4.appendChild(br4);
+			foo4.appendChild(element);
+			thing++;
+			itemCounter.setAttribute("value",thing);
+		}
+      }
+}
+
 function startCalculation(){
 	var g1, g2, g3, g4;
 	var p1, p2, p3, p4;
