@@ -91,6 +91,53 @@ function add() {
       }
 }
 
+function calculateGrade(){
+	var pg = 1;
+	var count = 1, avg=0, avgSum=0, avgSum2 = 0;
+	var i = 2, j = 0, k = 0;
+	var pp = 1, gd;
+	var pointsGainedSum = 0, pointsPossibleSum = 0;
+	// gets total points gained
+	while(pg){
+		j = i+1;
+		//k = i+2;
+		//parse to a string
+		i.toString();
+		j.toString();
+		//k.toString();
+		
+		//set the value found to the number
+		pg = Number(document.getElementById(i).value);
+		pp = Number(document.getElementById(j).value);
+		//gd = Number(document.getElementById(k).value);
+		
+		//calculate sum
+		pointsGainedSum = pointsGainedSum + pg;
+		pointsPossibleSum = pointsPossibleSum + pp;
+		
+		/*
+		avg = (pg / pp)*100;
+		avgSum = (avgSum + avg);
+		avgSum2 = avgSum /count;
+		*/
+		//set values
+		document.getElementById("totalPossible").value = pointsPossibleSum;
+		document.getElementById("totalGained").value = pointsGainedSum;
+		//document.getElementById("fooBar4").value = gd;
+		//document.getElementById("averageGrade").value = avgSum2;
+		
+		//parse back to number and iterate.
+		i = Number(i);
+		i+=4;
+		count++;
+		
+		
+	}
+	
+	
+}
+
+/*
 function startCalculation(){
 	var g1, g2, g3, g4;
 	var p1, p2, p3, p4;
@@ -145,3 +192,4 @@ function calculateAverage(gp, pp)
 	total = (gp/pp)*100; 
 	document.getElementById("averageGrade").value = total + "%";
 }
+*/
