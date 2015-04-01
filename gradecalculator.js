@@ -126,7 +126,7 @@ function calculateGrade(){
 		document.getElementById("totalPossible").value = pointsPossibleSum;
 		document.getElementById("totalGained").value = pointsGainedSum;
 		
-		document.getElementById(k).value = gd;
+		document.getElementById(k).value = gd + "%";
 		
 		//parse back to number and iterate.
 		i = Number(i);
@@ -137,7 +137,7 @@ function calculateGrade(){
 	// get overall average and round
 	avg = (pointsGainedSum/pointsPossibleSum)*100;
 	avg = Math.round(avg * 100)/100;
-	document.getElementById("averageGrade").value = avg ;
+	document.getElementById("averageGrade").value = avg + "%";
 }
 
 /*
