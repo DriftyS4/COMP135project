@@ -98,43 +98,46 @@ function calculateGrade(){
 	var pp = 1, gd;
 	var pointsGainedSum = 0, pointsPossibleSum = 0;
 	// gets total points gained
-	while(pg){
+	//document.getElementById("averageGrade").value = document.getElementById("addButton").value - 1
+	while(i < document.getElementById("addButton").value - 1){
+		// i is counter for points gained 
+		// j is counter for points possible
+		// k is counter for grade field
 		j = i+1;
-		//k = i+2;
-		//parse to a string
+		k = i+2;
+		//parse to a string so we can grab element by Id
 		i.toString();
 		j.toString();
-		//k.toString();
+		k.toString();
 		
 		//set the value found to the number
 		pg = Number(document.getElementById(i).value);
 		pp = Number(document.getElementById(j).value);
-		//gd = Number(document.getElementById(k).value);
+		
+		//set grade field for every possible assignment
+		gd = (pg/pp)*100;
+		gd = Math.round(gd * 100)/100;
 		
 		//calculate sum
 		pointsGainedSum = pointsGainedSum + pg;
 		pointsPossibleSum = pointsPossibleSum + pp;
 		
-		/*
-		avg = (pg / pp)*100;
-		avgSum = (avgSum + avg);
-		avgSum2 = avgSum /count;
-		*/
 		//set values
 		document.getElementById("totalPossible").value = pointsPossibleSum;
 		document.getElementById("totalGained").value = pointsGainedSum;
-		//document.getElementById("fooBar4").value = gd;
-		//document.getElementById("averageGrade").value = avgSum2;
+		
+		document.getElementById(k).value = gd;
 		
 		//parse back to number and iterate.
 		i = Number(i);
 		i+=4;
-		count++;
-		
-		
+		count++;	
 	}
 	
-	
+	// get overall average and round
+	avg = (pointsGainedSum/pointsPossibleSum)*100;
+	avg = Math.round(avg * 100)/100;
+	document.getElementById("averageGrade").value = avg ;
 }
 
 /*
