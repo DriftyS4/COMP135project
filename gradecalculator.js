@@ -12,6 +12,7 @@ window.onload = function(){
 };
 */
 
+
 function add() {
 	var br = document.createElement("hr");
 	var br2 = document.createElement("hr");
@@ -133,15 +134,19 @@ function calculateGrade(){
 		i+=4;
 		count++;	
 	}
-	
 	// get overall average and round
 	avg = (pointsGainedSum/pointsPossibleSum)*100;
 	avg = Math.round(avg * 100)/100;
 	document.getElementById("averageGrade").value = avg + "%";
+	
 }
 
 /*
 function startCalculation(){
+	document.getElementById("averageGrade").value = avg + "xx";
+	
+	
+	
 	var g1, g2, g3, g4;
 	var p1, p2, p3, p4;
 	var pointsPossible;
