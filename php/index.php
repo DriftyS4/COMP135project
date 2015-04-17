@@ -22,7 +22,7 @@ if(loggedin())
 			   
    $userid=$data['userid'];
     
-   echo 'Welcome! <b> ' . $username . '</b><a  href="logout.php"><input type="button"  value="Logout"/></a>';
+   echo 'Welcome! <b> ' . $username . '</b><a  href="../logout.php"><input type="button"  value="Logout"/></a>';
    if($num_course_rows == 0)
    {
 	   echo '<br><br>No Courses!<br><br>';
