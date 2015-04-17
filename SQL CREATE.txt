@@ -1,0 +1,22 @@
+create table members (
+userid varchar(30),
+password varchar(30),
+primary key (userid)
+);
+
+create table courses(
+userid varchar(30),
+courseid varchar(10),
+coursename varchar(40),
+semester varchar(40),
+foreign key (userid) references members(userid)
+);
+
+create table grades(
+classnum varchar(10),
+assignment int(2),
+pointsgained int(3),
+pointspossible int(3),
+percent double,
+primary key (classnum)
+);

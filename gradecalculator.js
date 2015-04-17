@@ -14,6 +14,10 @@ window.onload = function(){
 
 
 function add() {
+	var num = document.getElementById("counters");
+	var numnum = num.getAttribute("value");
+	numnum++;
+	num.setAttribute("value", numnum);
 	var br = document.createElement("hr");
 	var br2 = document.createElement("hr");
 	var br3 = document.createElement("hr");

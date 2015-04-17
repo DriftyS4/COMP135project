@@ -1,8 +1,0 @@
-create table grades(
-classnum char(10),
-assignment int(2),
-pointsgained int(3),
-pointspossible int(3),
-percent double,
-primary key (assignment)
-);

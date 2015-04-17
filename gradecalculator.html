@@ -27,37 +27,37 @@ gradecalculator.html
 			<!--Options for Weight Category-->
 <!--<OLD INTERFACE><DELETE ME TO RETRIEVE>
 
-			<form>
+			<div>
 				<select name="weight1">
 				  <option value="homework">Homework</option>
 				  <option value="quiz">Quiz</option>
 				  <option value="test">Test</option>
 				</select>
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 				<select name="weight2">
 				  <option value="homework">Homework</option>
 				  <option value="quiz">Quiz</option>
 				  <option value="test">Test</option>
 				</select>
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 				<select name="weight3">
 				  <option value="homework">Homework</option>
 				  <option value="quiz">Quiz</option>
 				  <option value="test">Test</option>
 				</select>
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 				<select name="weight4">
 				  <option value="homework">Homework</option>
 				  <option value="quiz">Quiz</option>
 				  <option value="test">Test</option>
 				</select>
-			</form>
+			</div>
 		</div>
 			
 			
@@ -67,27 +67,27 @@ gradecalculator.html
 		<div id="gradecol">
 			<!--Text fields for entering grades-->			
 <!--<OLD INTERFACE><DELETE ME TO RETRIEVE>
-			<form>
+			<div>
 			<input type="text" id="grade1" style="width: 80px">
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="grade2" style="width: 80px">
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="grade3" style="width: 80px">
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="grade4" style="width: 80px">
-			</form>
+			</div>
 			<br>
 			<br>
 			<legend>Total Points Gained</legend>
-			<form>
+			<div>
 			<input type="text" id="totalGained" style="width: 80px" disabled=true>
-			</form>
+			</div>
 			
 		</div>
 		</fieldset>
@@ -97,27 +97,27 @@ gradecalculator.html
 		<div id="posscol">
 			<!--Text fields for entering grades-->
 <!--<OLD INTERFACE><DELETE ME TO RETRIEVE>
-			<form>
+			<div>
 			<input type="text" id="possible1" style="width: 80px">
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="possible2" style="width: 80px">
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="possible3" style="width: 80px">
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="possible4" style="width: 80px">
-			</form>
+			</div>
 			<br>
 			<br>
 			<legend>Total Possible</legend>
-			<form>
+			<div>
 			<input type="text" id="totalPossible" style="width: 80px" disabled=true>
-			</form>
+			</div>
 			
 		</div>
 		</fieldset>
@@ -127,27 +127,27 @@ gradecalculator.html
 		<div id="gradepercent">
 			<!--Text fields for entering grades-->
 <!--<OLD INTERFACE><DELETE ME TO RETRIEVE>
-			<form>
+			<div>
 			<input type="text" id="percent1" style="width: 80px" disabled=true>
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="percent2" style="width: 80px" disabled=true>
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="percent3" style="width: 80px" disabled=true>
-			</form>
+			</div>
 			<br>
-			<form>
+			<div>
 			<input type="text" id="percent4" style="width: 80px" disabled=true>
-			</form>
+			</div>
 			<br>
 			<br>
 			<legend>Average Grade</legend>
-			<form>
+			<div>
 			<input type="text" id="averageGrade" style="width: 80px" disabled=true>
-			</form>
+			</div>
 			
 		</div>
 		</fieldset>
@@ -171,7 +171,10 @@ gradecalculator.html
 
 <body>
 	<h1>Grade Calculator</h1>
-	<p>Begin calculating your course grade!</p>	
+	<p>Begin calculating your course grade!</p>
+	
+	<form action="submit.php" method="POST">
+	
 	<div id="container">
 			
 			<fieldset id="course">
@@ -185,10 +188,10 @@ gradecalculator.html
 					  <option value="test">Test</option>
 					</select>
 					
-								<form id="fooBar"></form>
+								<div id="fooBar"></div>
 								
-					<button id="addButton" onclick="add()" value="5">+</button>
-					
+					<button type = "button" id="addButton" onclick="add()" value="5">+</button>
+					<input type="text" name="count" id="counters" style="width: 20px" value="0" disabled="true">
 					</div>
 			</div>
 			</fieldset>
@@ -200,14 +203,14 @@ gradecalculator.html
 			
 			<input type="text" id="2" style="width: 80px">
 			
-					<form id="fooBar2"></form>
+					<div id="fooBar2"></div>
 					
 			<br>
 			<br>
 			<legend>Total Points Gained</legend>
-			<form>
+			<div>
 			<input type="text" id="totalGained" style="width: 80px" disabled=true>
-			</form>
+			</div>
 					
 			</div>
 		</div>
@@ -218,16 +221,16 @@ gradecalculator.html
 		<div id="posscol">
 			<div id="add3">
 			
-			<input type="text" id="3" style="width: 80px">
+			<input type="text" name="classnum" id="3" style="width: 80px">
 			
-					<form id="fooBar3"></form>
+					<div id="fooBar3"></div>
 					
 			<br>
 			<br>
 			<legend>Total Possible</legend>
-			<form>
+			<div>
 			<input type="text" id="totalPossible" style="width: 80px" disabled=true>
-			</form>
+			</div>
 					
 			</div>
 		</div>
@@ -240,32 +243,41 @@ gradecalculator.html
 				
 				<input type="text" id="4" style="width:80px" disabled=true>
 				
-						<form id="fooBar4"></form>
+						<div id="fooBar4"></div>
 						
 				<br>
 				<br>
 				<legend>Average Grade</legend>
-				<form>
+				<div>
 				<input type="text" id="averageGrade" style="width: 80px" disabled=true>
-				</form>
-				
+				</div>
+	
+	
+	
+	<br>Assignment number*: <input type="text" name="assignment">
+	<br>points gained*: <input type="text" name="pointsgained">
+	<br>points possible*: <input type="text" name="pointspossible">
+	<br>Percentage*: <input type="text" name="percent">
+	<input type="submit" value="Save">
+	
+	
+	
+	
+	</form>
 				<br>
-				<button id="calculate" onclick="calculateGrade()">Calculate</button>
+				<button type = "button" id="calculate" onclick="calculateGrade()">Calculate</button>
 				
 				</div>
 		</div>
 		</fieldset>
 		
 	</div>
-	<form action="submit.php" method="POST">
-	<br>Assignment number*: <input type="text" name="assignment">
-	<br>points gained*: <input type="text" name="pointsgained">
-	<br>points possible*: <input type="text" name="pointspossible">
-	<br>Percentage*: <input type="text" name="percent">
-	<br>Class number*: <input type="text" name="classnum">
 	
-	<input type="submit" value="Save">
-	</form>
+	
+	
+	
+	
+	
 	<form action='title.html'>
     <input type="submit" value="Home">
 	</form>
