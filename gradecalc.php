@@ -61,7 +61,6 @@ if (isset($_POST['courseid'])){
 		if($num_grade_rows > 0){
 				echo 'Course ID: ';
 				   $courseiddata = mysql_result($course, 0,'courseid');
-				   echo $courseiddata;
 					echo '<input type="text" name="courseid"
 					style="width: 80px" value = ',$courseiddata, '>';
 					
