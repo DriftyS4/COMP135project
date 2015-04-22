@@ -1,0 +1,19 @@
+Instructions:
+
+Install XAMPP
+
+place all github gradecalculator files in: C:\xampp\htdocs\gradecalculator
+
+go to localhost (any browser)
+
+- click "phpmyadmin" on the left column.
+
+- click "new" on the left column of phpmyadmin.
+
+- for database name: use "gradecalculator"
+
+- click "gradecalculator" from the left
+
+- click "SQL" in the top tab
+
+- paste in "SQL CREATE.txt" contents
