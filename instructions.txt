@@ -17,3 +17,6 @@ go to localhost (any browser)
 - click "SQL" in the top tab
 
 - paste in "SQL CREATE.txt" contents
+
+then go to your browser 
+localhost/gradecalculator
