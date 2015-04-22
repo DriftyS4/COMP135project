@@ -145,6 +145,10 @@ function calculateGrade(){
 	
 }
 
+function calc(){
+	
+}
+
 /*
 function startCalculation(){
 	document.getElementById("averageGrade").value = avg + "xx";
