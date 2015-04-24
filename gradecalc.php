@@ -109,9 +109,9 @@ if (isset($_POST['courseid'])){
 			}
 			
 			echo '<br>Results: <br>';
-			echo 'Total Points Gained: ', $totalpointsgained;
-			echo '        Total Points Possible: ', $totalpointspossible;
-			echo '        Total Percentage/ grade: ', ($totalpointsgained/$totalpointspossible) *100;
+			echo "Total Points Gained: <b><font color='green'>", $totalpointsgained, '</font></b>';
+			echo '        Total Points Possible: <b><font color="green">', $totalpointspossible, '</font></b>';
+			echo '        Total Percentage/ grade: <b> <font color="green">', ($totalpointsgained/$totalpointspossible) *100, '</font></b>';
 			 //$totalpercentage / $num_grade_rows;
 			   
 		}

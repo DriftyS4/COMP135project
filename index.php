@@ -78,8 +78,9 @@ if(loggedin())
 	   for ($i = 0; $i < $num_course_rows; $i++){
 			echo 'Course Name: ';
 			echo mysql_result($getCourses, $i,'coursename');
-			echo '<br>Course ID: ';
+			echo '<br>Course ID: ', '<b><font color = "blue">';
 			echo mysql_result($getCourses, $i,'courseid');
+			echo '</font></b>';
 			echo '<br>Semester: ';
 			echo mysql_result($getCourses, $i,'semester');
 			echo '<br><br>';
