@@ -1,7 +1,11 @@
 <html>
+<link href="gradecalculator.css" rel="stylesheet">
+<div id='header' align="center">
+	<b class='titlewords'>Registration Page</b><br><br>
+</div>
 <div align="center">
 <form action="regcom.php" method="POST">
-<b>Registration Page</b><br><br>
+
 <font color="red"><b>Please enter all fields with * </b></font><br><br>
 Userid*: <input type="text" name="userid"> 
 <br>Password*: <input type="password" name="password1">

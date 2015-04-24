@@ -1,7 +1,8 @@
 <html>
-
-Grade calculator test page
-<br><br><br>
+<link href="gradecalculator.css" rel="stylesheet">
+<div id='header' align='center'>
+	<b class='titlewords'>Assignment Grades</b>
+</div>
 <form action="gradecalc.php" method="POST">
 
 <?php
@@ -106,10 +107,12 @@ if (isset($_POST['courseid'])){
 					pointsgained = '$pointsgaineddata', 
 					percent = '$percentagedata' WHERE userid = '$username' AND courseid = '$courseid' AND assignment = '$assignmentdata'") or die(mysql_error());
 			}
+			
 			echo '<br>Results: <br>';
 			echo 'Total Points Gained: ', $totalpointsgained;
 			echo '        Total Points Possible: ', $totalpointspossible;
-			echo '        Total Percentage/ grade: ', ($totalpointsgained/$totalpointspossible) *100; //$totalpercentage / $num_grade_rows;
+			echo '        Total Percentage/ grade: ', ($totalpointsgained/$totalpointspossible) *100;
+			 //$totalpercentage / $num_grade_rows;
 			   
 		}
 		else
@@ -142,17 +145,17 @@ function check(){
 
 
 <br>
-Insert Course ID of course you would like to drop.
-<br>
-<form action="gradecalc.php" method="POST">
-Course ID: <input type = "text" name = "courseid" value = "<?php if(isset($_POST['courseid']))	echo $_POST['courseid']; ?>">
-Assignment: <input type="text" name="assignment">
-<input type="submit" value="Delete" name = "deletebutton">
-<br><br>
-<a 
-href="delete.html" ></a>
-</form>
-
+<div id='dropassignment' align='center'>
+	Enter Assignment ID of the assignment you would like to <b class='red'>drop</b>.
+	<br>
+	<form action="gradecalc.php" method="POST">
+		Course ID: <input type = "text" name = "courseid" value = "<?php if(isset($_POST['courseid']))	echo 	$_POST['courseid']; ?>">
+		Assignment: <input type="text" name="assignment">
+		<input type="submit" value="Delete" name = "deletebutton">
+		<br><br>
+		<a href="delete.html" ></a>
+	</form>
+</div>
 
 
 <html>

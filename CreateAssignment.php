@@ -1,6 +1,8 @@
-
+<link href="gradecalculator.css" rel="stylesheet">
+<div id='header' align='center'>
+<b class='titlewords'>Create An Assignment</b><br><br>
+</div>
 <form action="gradecalc.php" method="POST">
-<b>Create Assignment!</b><br><br>
 <font color="red"><b>Please enter all fields with * </b></font><br><br>
 Course ID*: <input type="text" name="courseid"> <br>
 Points Gained*: <input type="text" name="pointsgainedCA"> 

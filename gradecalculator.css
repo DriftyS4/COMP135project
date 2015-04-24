@@ -1,12 +1,34 @@
 /*
 COMP 135
 gradecalculator.cass
-
+<link href="gradecalculator.css" rel="stylesheet">
 */
-
+#results{
+	background-color: #FFFFF0;
+}
+#dropassignment{
+	background-color: #FAFAD2;
+}
+html{
+	background-color: dimgrey;
+}
 body
 {
-	font: 12pt "Century Gothic", "Helvetica", "Arial", sans-serif;
+	background-color: #FFFFF0;
+	color: black;
+	font: 14pt "Garamond", "Arial", sans-serif;
+}
+b.titlewords{
+	color: black;
+	font: "Garamond","Arial";
+	font-size: 150%;
+	text-transform: uppercase;
+}
+b.red{
+	color:red;
+}
+#header{
+	background-color: #FF8C00;
 }
 
 button

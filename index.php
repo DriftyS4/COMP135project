@@ -1,7 +1,13 @@
 <html>
-<div align="center">
-<font color="blue"><b>Grade Calculator</b></font><br><br>
-</div>
+<link href="gradecalculator.css" rel="stylesheet">
+<head>
+	<div id='header' align="center">	
+		<b class='titlewords'>Grade Calculator</b><br><br>
+	</div>
+</head>
+
+<body>
+</body>
 
 </html>
 

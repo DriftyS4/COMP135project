@@ -1,6 +1,8 @@
-
+<link href="gradecalculator.css" rel="stylesheet">
+<div id='header' align="center">
+<b class='titlewords'>Create A Course</b><br><br>
+</div>
 <form action="coursecom.php" method="POST">
-<b>Create Course!</b><br><br>
 <font color="red"><b>Please enter all fields with * </b></font><br><br>
 Course name: <input type="text" name="coursename"> 
 <br>Course ID (ex. 135)*: <input type="text" name="courseid">
